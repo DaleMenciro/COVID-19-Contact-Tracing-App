@@ -9,6 +9,6 @@ class Application(ctk.CTk):
         self.geometry("1200x750+150+20")
         self.title("Welcome!")
         self.grid_columnconfigure((0, 1), weight=1)
-        self.image1=ImageTk.PhotoImage(Image.open())
+        self.image1=ImageTk.PhotoImage(Image.open("C:\\Users\\user\\Desktop\\OOP (LAB EXERCISES)\\COVID CONTACT TRACING\\Pattern.png"))
         self.bg_1=ctk.CTkLabel(self,image=self.image1)
         self.bg_1.pack()
