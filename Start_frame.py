@@ -37,5 +37,9 @@ class Frame(ctk.CTkFrame):
         self.pack_forget()
     
     def exit(self):
+            response= messagebox.askyesno("Warning!", "Are you sure you want to exit?")
+            if response:
+                from Start import Application
+                Application.quit(self)
 
 
