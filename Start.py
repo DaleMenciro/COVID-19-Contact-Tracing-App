@@ -1,6 +1,6 @@
 import customtkinter as ctk
 from PIL import ImageTk,Image
-from Start_frame 
+from Start_frame import Frame
 
 class Application(ctk.CTk):
     def __init__(self):
@@ -13,3 +13,4 @@ class Application(ctk.CTk):
         self.image1=ImageTk.PhotoImage(Image.open("C:\\Users\\user\\Desktop\\OOP (LAB EXERCISES)\\COVID CONTACT TRACING\\Pattern.png"))
         self.bg_1=ctk.CTkLabel(self,image=self.image1)
         self.bg_1.pack()
+        self.start_frame = Frame(parent=self)
