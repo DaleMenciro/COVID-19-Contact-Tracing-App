@@ -17,6 +17,20 @@ class Frame(ctk.CTkFrame):
         self.label3.place(x=35, y=80)
 
     def buttons(self):
+         #Create custom button
+        self.button1 = ctk.CTkButton(master=self.frame,
+                                        width=220, height=50 , text="Start",
+                                        font=('Century Gothic',20 , "bold") 
+                                        , fg_color=("#367E18"),
+                                        command=self.go_start, corner_radius=6)
+        self.button1.place(x=50, y=140)
+
+        self.button2 = ctk.CTkButton(master=self.frame,
+                                        width=220, height=50 , text="Exit",
+                                        font=('Century Gothic',20 , "bold") 
+                                        , fg_color=("#CC3636"),
+                                        command=self.exit, corner_radius=6)
+        self.button2.place(x=50, y=220)
     
     def go_start(self):
     
