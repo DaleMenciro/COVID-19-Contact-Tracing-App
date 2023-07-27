@@ -7,3 +7,13 @@ class Frame(ctk.CTkFrame):
         super().__init__(parent)
         self.frame=ctk.CTkFrame(parent, width=320, height=350)
         self.frame.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
+
+    def create_widget(self):
+
+    def buttons(self):
+    
+    def go_start(self):
+    
+    def exit(self):
+
+
