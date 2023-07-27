@@ -33,6 +33,8 @@ class Frame(ctk.CTkFrame):
         self.button2.place(x=50, y=220)
     
     def go_start(self):
+        self.pack()
+        self.pack_forget()
     
     def exit(self):
 
