@@ -29,6 +29,9 @@ class Info(ctk.CTkFrame):
     
     
     def create_button(self):
+        self.button=ctk.CTkButton(master=self.frame,width=500, height=50, text="Get Started", font=('Century Gothic',19,"bold"),fg_color=("#367E18"), command=self.button_command)
+        self.button.place(relx=0.5, rely=0.9, anchor=tkinter.CENTER)
+
     
     def button_command(self):
 
