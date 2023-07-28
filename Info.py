@@ -1,6 +1,7 @@
 import tkinter
 import customtkinter as ctk
 from tkinter import messagebox
+from COVID import COVID
 
 class Info(ctk.CTkFrame):
     def __init__(self, parent):
