@@ -180,3 +180,9 @@ class Search(ctk.CTkFrame):
         # Loop through the user_data to find the matching registration number
         for data in user_data:
             if "Registration Number" in data and data["Registration Number"] == registration_number:
+                # If the registration number is found, store the data and break the loop
+                data_found = data
+                break
+            
+        # Check if data was found
+        if data_found:
