@@ -170,3 +170,6 @@ class Search(ctk.CTkFrame):
                 reader = csv.DictReader(file)
                 # Convert the reader into a list of dictionaries
                 user_data = list(reader)
+        except FileNotFoundError:
+            # If the file is not found, initialize an empty list for user_data
+            user_data = []
