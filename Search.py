@@ -72,9 +72,9 @@ class Search(ctk.CTkFrame):
         #gender radiobutton
         self.gender = tkinter.IntVar()
         
-        self.male_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.gender, value= 1, text="Male", font=("Century Gothic", 16))
+        self.male_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.gender, value= 1, text="Male", font=("Century Gothic", 16), state= "disabled")
         self.male_radiobutton.place(x=125, y=133)
-        self.female_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.gender,value= 2, text="Female", font=("Century Gothic", 16))
+        self.female_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.gender,value= 2, text="Female", font=("Century Gothic", 16), state= "disabled")
         self.female_radiobutton.place(x=215, y=133)
 
         #number entry
@@ -88,60 +88,60 @@ class Search(ctk.CTkFrame):
         #vaccionation status radiobutton
         self.vaccination_status = tkinter.IntVar()
 
-        self.not_yet_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.vaccination_status, text="Not Yet", font=("Century Gothic", 12), value= 1)
+        self.not_yet_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.vaccination_status, text="Not Yet", font=("Century Gothic", 12), value= 1, state= "disabled")
         self.not_yet_radiobutton.place(x=50, y=410)
 
-        self.onedose_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="1st Dose", font=("Century Gothic", 12), value= 2)
+        self.onedose_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="1st Dose", font=("Century Gothic", 12), value= 2, state= "disabled")
         self.onedose_radiobutton.place(x=140, y=410)
 
-        self.twodose_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="Fully Vaccine", font=("Century Gothic", 12), value= 3)
+        self.twodose_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="Fully Vaccine", font=("Century Gothic", 12), value= 3, state= "disabled")
         self.twodose_radiobutton.place(x=235, y=410)
 
-        self.onebooster_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="1st Booster Shot", font=("Century Gothic", 12), value= 4)
+        self.onebooster_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="1st Booster Shot", font=("Century Gothic", 12), value= 4, state= "disabled")
         self.onebooster_radiobutton.place(x=355, y=410)
 
-        self.twobooster_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="Second Booster", font=("Century Gothic", 12), value= 5)
+        self.twobooster_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="Second Booster", font=("Century Gothic", 12), value= 5, state= "disabled")
         self.twobooster_radiobutton.place(x=485, y=410)
 
         #exposure radiobutton
 
         self.exposure = tkinter.IntVar()
 
-        self.yes_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.exposure, text="Yes", font=("Century Gothic", 12), value= 1)
+        self.yes_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.exposure, text="Yes", font=("Century Gothic", 12), value= 1, state= "disabled")
         self.yes_radiobutton.place(x=50, y=475)
 
-        self.no_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.exposure, text="No", font=("Century Gothic", 12), value= 2)
+        self.no_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.exposure, text="No", font=("Century Gothic", 12), value= 2, state= "disabled")
         self.no_radiobutton.place(x=140, y=475)
 
-        self.uncertain_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.exposure, text="Uncertain", font=("Century Gothic", 12), value= 3)
+        self.uncertain_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.exposure, text="Uncertain", font=("Century Gothic", 12), value= 3, state= "disabled")
         self.uncertain_radiobutton.place(x=235, y=475)
 
         #contact exposure radiobutton
 
         self.contact = tkinter.IntVar()
 
-        self.yes_contact_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.contact, text="Yes", font=("Century Gothic", 12), value= 1,)
+        self.yes_contact_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.contact, text="Yes", font=("Century Gothic", 12), value= 1,, state= "disabled")
         self.yes_contact_radiobutton.place(x=50, y=545)
 
-        self.no_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="No", font=("Century Gothic", 12), value= 2,)
+        self.no_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="No", font=("Century Gothic", 12), value= 2,, state= "disabled")
         self.no_contact_radiobutton.place(x=140, y=545)
 
-        self.uncertain_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="Uncertain", font=("Century Gothic", 12), value= 3,)
+        self.uncertain_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="Uncertain", font=("Century Gothic", 12), value= 3,, state= "disabled")
         self.uncertain_contact_radiobutton.place(x=235, y=545)
 
         #covid test radiobutton
         self.covid_test = tkinter.IntVar()
 
-        self.no_test_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.covid_test, text="No", font=("Century Gothic", 12), value= 1)
+        self.no_test_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.covid_test, text="No", font=("Century Gothic", 12), value= 1, state= "disabled")
         self.no_test_radiobutton.place(x=50, y=610)
 
-        self.yes_positive_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Positive", font=("Century Gothic", 12), value= 2)
+        self.yes_positive_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Positive", font=("Century Gothic", 12), value= 2, state= "disabled")
         self.yes_positive_contact_radiobutton.place(x=120, y=610)
         
-        self.yes_negative_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Negative", font=("Century Gothic", 12), value= 3)
+        self.yes_negative_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Negative", font=("Century Gothic", 12), value= 3, state= "disabled")
         self.yes_negative_contact_radiobutton.place(x=230, y=610)
         
-        self.yes_pending_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Pending", font=("Century Gothic", 12), value= 4)
+        self.yes_pending_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Pending", font=("Century Gothic", 12), value= 4, state= "disabled")
         self.yes_pending_contact_radiobutton.place(x=350, y=610)
 
     def search_button(self):
