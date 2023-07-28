@@ -166,3 +166,7 @@ class Search(ctk.CTkFrame):
         try:
             # Try to open the CSV file containing the contact tracing data
             with open("contact_tracing_data.csv", "r", newline='') as file:
+                # Read the CSV data into a dictionary reader
+                reader = csv.DictReader(file)
+                # Convert the reader into a list of dictionaries
+                user_data = list(reader)
