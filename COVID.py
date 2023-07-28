@@ -4,6 +4,7 @@ from tkinter import messagebox
 from tkinter import END
 import csv
 import uuid
+from Search import Search
 
 
 class COVID(ctk.CTkFrame):
@@ -216,3 +217,4 @@ class COVID(ctk.CTkFrame):
         self.pack_forget()
         self.frame.destroy()
         self.frame2.destroy()
+        self.new_frame = Search(self.master)
