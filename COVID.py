@@ -91,3 +91,16 @@ class COVID(ctk.CTkFrame):
 
         self.twobooster_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.vaccination_status, text="Second Booster", font=("Century Gothic", 12), value= 5, command= self.status_vaccination)
         self.twobooster_radiobutton.place(x=485, y=410)
+
+        #exposure radiobutton
+
+        self.exposure = tkinter.IntVar()
+
+        self.yes_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.exposure, text="Yes", font=("Century Gothic", 12), value= 1, command= self.covid_exposure)
+        self.yes_radiobutton.place(x=50, y=475)
+
+        self.no_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.exposure, text="No", font=("Century Gothic", 12), value= 2, command= self.covid_exposure)
+        self.no_radiobutton.place(x=140, y=475)
+
+        self.uncertain_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.exposure, text="Uncertain", font=("Century Gothic", 12), value= 3, command= self.covid_exposure)
+        self.uncertain_radiobutton.place(x=235, y=475)
