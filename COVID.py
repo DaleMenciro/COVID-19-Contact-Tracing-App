@@ -117,4 +117,19 @@ class COVID(ctk.CTkFrame):
 
         self.uncertain_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="Uncertain", font=("Century Gothic", 12), value= 3,)
         self.uncertain_contact_radiobutton.place(x=235, y=545)
+
+        #covid test radiobutton
+        self.covid_test = tkinter.IntVar()
+
+        self.no_test_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.covid_test, text="No", font=("Century Gothic", 12), value= 1)
+        self.no_test_radiobutton.place(x=50, y=610)
+
+        self.yes_positive_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Positive", font=("Century Gothic", 12), value= 2)
+        self.yes_positive_contact_radiobutton.place(x=120, y=610)
+        
+        self.yes_negative_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Negative", font=("Century Gothic", 12), value= 3)
+        self.yes_negative_contact_radiobutton.place(x=230, y=610)
+        
+        self.yes_pending_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Pending", font=("Century Gothic", 12), value= 4)
+        self.yes_pending_contact_radiobutton.place(x=350, y=610)
         
