@@ -31,6 +31,10 @@ class COVID(ctk.CTkFrame):
         self.email_label = ctk.CTkLabel(master= self.frame, text = "Email Address:", font=("Century Gothic", 17, "bold"))
         self.email_label.place(x= 50, y=230)
 
+        #health questions labels
+        self.title2_label = ctk.CTkLabel(master=self.frame,bg_color="#367E18", width=900, height=40, text = "Health Questions",text_color="#FCFFE7", font=("Century Gothic", 25, "bold"))
+        self.title2_label.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
+
 
     def entries(self):
 
