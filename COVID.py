@@ -39,6 +39,9 @@ class COVID(ctk.CTkFrame):
         self.vaccination_status_label = ctk.CTkLabel(master=self.frame, text = "Have you received the COVID-19 vaccination?", font=("Century Gothic", 17, "bold"))
         self.vaccination_status_label.place(x= 50, y=370)
 
+        #symptoms label
+        self.symptoms_label = ctk.CTkLabel(master=self.frame, text = "Have you been exposed to COVID-19 in the last 14 days?",font=("Century Gothic", 17, "bold"))
+        self.symptoms_label.place(x= 50, y=440)
 
     def entries(self):
 
