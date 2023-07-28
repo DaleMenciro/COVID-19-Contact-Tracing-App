@@ -184,3 +184,5 @@ class COVID(ctk.CTkFrame):
         except FileNotFoundError:
             user_data = []
 
+        # Add the data to the user_data list
+        user_data.append(data)
