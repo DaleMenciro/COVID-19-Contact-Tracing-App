@@ -207,3 +207,5 @@ class COVID(ctk.CTkFrame):
         for radio in radio_buttons:
             radio.set(0)
 
+        messagebox.showinfo("Message", f"Data saved successfully.\nPlease save your registration number:{short_uuid}")
+
