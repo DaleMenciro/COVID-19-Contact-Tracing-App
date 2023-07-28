@@ -162,3 +162,7 @@ class Search(ctk.CTkFrame):
     def search_data(self):
         # Get the registration number from the search_entry widget
         registration_number = self.search_entry.get()
+
+        try:
+            # Try to open the CSV file containing the contact tracing data
+            with open("contact_tracing_data.csv", "r", newline='') as file:
