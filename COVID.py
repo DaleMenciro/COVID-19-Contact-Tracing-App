@@ -1,6 +1,9 @@
 import customtkinter as ctk
 import tkinter
 from tkinter import messagebox
+from tkinter import END
+import csv
+import uuid
 
 class COVID(ctk.CTkFrame):
     def __init__(self, parent):
@@ -139,3 +142,5 @@ class COVID(ctk.CTkFrame):
         self.save_button.place(relx=0.25, rely=0.5, anchor=tkinter.CENTER)
         self.search_button=ctk.CTkButton(self.frame2,width=400, height=50, text="Search", font=('Century Gothic',19,"bold"),fg_color=("#CC3636"), command= None)
         self.search_button.place(relx=0.75, rely=0.5, anchor=tkinter.CENTER)
+
+        
