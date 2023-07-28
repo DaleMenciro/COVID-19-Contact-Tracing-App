@@ -151,4 +151,7 @@ class Search(ctk.CTkFrame):
             Application.quit(self)
 
     def back(self):
+        self.pack_forget()
+        from COVID import COVID
+        self.back_window = COVID(self.master)
 
