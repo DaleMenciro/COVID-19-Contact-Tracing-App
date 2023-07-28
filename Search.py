@@ -183,6 +183,8 @@ class Search(ctk.CTkFrame):
                 # If the registration number is found, store the data and break the loop
                 data_found = data
                 break
-            
+
         # Check if data was found
         if data_found:
+            # If data is found, display a message box with the information
+            messagebox.showinfo("Hello!", "Registration Number found")
