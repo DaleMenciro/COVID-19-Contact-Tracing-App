@@ -1,5 +1,6 @@
 import tkinter
 import customtkinter as ctk
+from tkinter import messagebox
 
 class Info(ctk.CTkFrame):
     def __init__(self, parent):
@@ -34,4 +35,9 @@ class Info(ctk.CTkFrame):
 
     
     def button_command(self):
+        response= messagebox.askyesno("Hello!", "Are you sure you want to get started?")
+        if response:
+            self.pack()
+            self.frame.destroy()
+            self.new_frame = COVID(self.master)
 
