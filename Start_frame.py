@@ -1,6 +1,7 @@
 import tkinter
 import customtkinter as ctk
 from tkinter import messagebox
+from Info import Info
 
 class Frame(ctk.CTkFrame):
     def __init__(self, parent):
@@ -37,6 +38,8 @@ class Frame(ctk.CTkFrame):
     def go_start(self):
         self.pack()
         self.pack_forget()
+        self.new_window = Info(self.master)
+
     
     def exit(self):
             response= messagebox.askyesno("Warning!", "Are you sure you want to exit?")
