@@ -148,13 +148,18 @@ class COVID(ctk.CTkFrame):
         return short_uuid
     
     def on_save_button_click(self):
-          # Get values from widgets
-          name = self.name_entry.get()
-          gender = self.gender.get()
-          phone_number = self.number_entry.get()
-          email = self.email_entry.get()
-          vaccine = self.vaccination_status.get()
-          exposure = self.exposure.get()
-          contact= self.contact.get()
-          covid_test = self.covid_test.get()
-          short_uuid = self.registration_number()
+        # Get values from widgets
+        name = self.name_entry.get()
+        gender = self.gender.get()
+        phone_number = self.number_entry.get()
+        email = self.email_entry.get()
+        vaccine = self.vaccination_status.get()
+        exposure = self.exposure.get()
+        contact= self.contact.get()
+        covid_test = self.covid_test.get()
+        short_uuid = self.registration_number()
+
+        #messagebox for if the user did not prompt all of the information needed
+        if not (name and phone_number and email) or not (gender and vaccine and exposure and contact and covid_test):
+            messagebox.showinfo("Message", "Please provide all needed information")
+            return
