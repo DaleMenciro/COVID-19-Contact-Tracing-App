@@ -146,3 +146,15 @@ class COVID(ctk.CTkFrame):
     def registration_number(self):
         short_uuid = str(uuid.uuid4().int)[:6]
         return short_uuid
+    
+    def on_save_button_click(self):
+          # Get values from widgets
+          name = self.name_entry.get()
+          gender = self.gender.get()
+          phone_number = self.number_entry.get()
+          email = self.email_entry.get()
+          vaccine = self.vaccination_status.get()
+          exposure = self.exposure.get()
+          contact= self.contact.get()
+          covid_test = self.covid_test.get()
+          short_uuid = self.registration_number()
