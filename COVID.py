@@ -53,4 +53,7 @@ class COVID(ctk.CTkFrame):
         self.covid_test_label.place(x= 50, y=580)
 
     def entries(self):
+        #name entry
+        self.name_entry = ctk.CTkEntry(master=self.frame, width=200, height=25)
+        self.name_entry.place(x=115, y=83)
 
