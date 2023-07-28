@@ -27,6 +27,10 @@ class COVID(ctk.CTkFrame):
         self.number_label = ctk.CTkLabel(master= self.frame, text = "Phone Number:" , font=("Century Gothic", 17, "bold"))
         self.number_label.place(x= 50, y=180)
 
+        #email label
+        self.email_label = ctk.CTkLabel(master= self.frame, text = "Email Address:", font=("Century Gothic", 17, "bold"))
+        self.email_label.place(x= 50, y=230)
+
 
     def entries(self):
 
