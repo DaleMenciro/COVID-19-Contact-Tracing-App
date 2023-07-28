@@ -1,0 +1,3 @@
+
+
+class Search(ctk.CTkFrame):
