@@ -160,3 +160,5 @@ class Search(ctk.CTkFrame):
         self.back_window = COVID(self.master)
     
     def search_data(self):
+        # Get the registration number from the search_entry widget
+        registration_number = self.search_entry.get()
