@@ -200,3 +200,6 @@ class Search(ctk.CTkFrame):
             self.exposure.set(data_found["Exposure Status"])
             self.contact.set(data_found["Contact Exposure Status"])
             self.covid_test.set(data_found["COVID Test"])
+        else:
+            # If data is not found, display an error message box
+            messagebox.showerror("Error!", "Registration Number not found, please try again.")
