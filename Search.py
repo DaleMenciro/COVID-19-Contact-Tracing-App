@@ -159,5 +159,4 @@ class Search(ctk.CTkFrame):
         from COVID import COVID
         self.back_window = COVID(self.master)
     
-    
-
+    def search_data(self):
