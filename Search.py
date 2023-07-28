@@ -137,6 +137,9 @@ class Search(ctk.CTkFrame):
         self.search_button.place(relx=0.58, rely=0.5, anchor=tkinter.CENTER)
 
     def back_exit_button (self):
+        self.back_button=ctk.CTkButton(self.frame2,width=70, height=40, text="Back", font=('Century Gothic',19,"bold"), command= self.back)
+        self.back_button.place(relx=0.8, rely=0.5, anchor=tkinter.CENTER)
+
 
     def exit(self):
 
