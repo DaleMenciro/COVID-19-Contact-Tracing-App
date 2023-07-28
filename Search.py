@@ -133,6 +133,8 @@ class Search(ctk.CTkFrame):
         self.yes_pending_contact_radiobutton.place(x=350, y=610)
 
     def search_button(self):
+        self.search_button=ctk.CTkButton(self.frame2,width=70, height=40, text="Search", font=('Century Gothic',19,"bold"), command= None)
+        self.search_button.place(relx=0.58, rely=0.5, anchor=tkinter.CENTER)
 
     def back_exit_button (self):
 
