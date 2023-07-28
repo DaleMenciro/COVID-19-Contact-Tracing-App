@@ -10,6 +10,7 @@ class COVID(ctk.CTkFrame):
         self.frame2=ctk.CTkFrame(parent, width=900, height=70)
         self.frame2.place(relx=0.5, rely=0.94, anchor=tkinter.CENTER)
         self.create_widgets()
+        self.entries()
 
     def create_widgets(self):
         #respondent information labels
