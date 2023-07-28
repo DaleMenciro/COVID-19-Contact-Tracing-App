@@ -10,7 +10,11 @@ class COVID(ctk.CTkFrame):
         self.frame2=ctk.CTkFrame(parent, width=900, height=70)
         self.frame2.place(relx=0.5, rely=0.94, anchor=tkinter.CENTER)
 
-        def create_widgets(self):
+    def create_widgets(self):
+        #respondent information labels
+        self.title_label = ctk.CTkLabel(master=self.frame,bg_color="#367E18", width=900, height=40, text = "Respondent Information",text_color="#FCFFE7", font=("Century Gothic", 25, "bold"))
+        self.title_label.place(relx=0.5, rely=0.05, anchor=tkinter.CENTER)
+        
 
-        def entries(self):
-            
+    def entries(self):
+
