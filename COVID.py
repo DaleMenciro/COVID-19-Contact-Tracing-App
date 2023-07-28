@@ -186,3 +186,13 @@ class COVID(ctk.CTkFrame):
 
         # Add the data to the user_data list
         user_data.append(data)
+
+        # Save the updated user_data list to the CSV file
+        with open("contact_tracing_data.csv", "w", newline='') as file:
+            fieldnames = [
+            'Full_name', 'Gender', 'Phone Number', 'Email', 'Vaccination Status',
+            'Exposure Status', 'Contact Exposure Status', 'COVID Test', 'Registration Number'
+            ]
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(user_data)
