@@ -47,6 +47,9 @@ class COVID(ctk.CTkFrame):
         self.exposure_label = ctk.CTkLabel(master=self.frame, text = "Have you been in contact with someone experiencing COVID-19 symptoms in the past week?",font=("Century Gothic", 17, "bold"))
         self.exposure_label.place(x= 50, y=510)
 
+        #covid_test label
+        self.covid_test_label = ctk.CTkLabel(master=self.frame, text = "Have you undergone a COVID-19 test within the past two weeks?",font=("Century Gothic", 17, "bold"))
+        self.covid_test_label.place(x= 50, y=580)
 
     def entries(self):
 
