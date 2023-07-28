@@ -209,3 +209,8 @@ class COVID(ctk.CTkFrame):
 
         messagebox.showinfo("Message", f"Data saved successfully.\nPlease save your registration number:{short_uuid}")
 
+    #go to search frame 
+    def search_frame(self):
+        self.pack_forget()
+        self.frame.destroy()
+        self.frame2.destroy()
