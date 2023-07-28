@@ -17,8 +17,8 @@ class Search(ctk.CTkFrame):
 
     def create_widgets(self):
          #respondent information labels
-        self.title_label = ctk.CTkLabel(master=self.frame,bg_color="#367E18", width=900, height=40, text = "Respondent Information",text_color="#FCFFE7", font=("Century Gothic", 25, "bold"))
-        self.title_label.place(relx=0.5, rely=0.05, anchor=tkinter.CENTER)
+        self.title_label = ctk.CTkLabel(master=self.frame2, text = "Enter your Registration Number:", font=("Century Gothic", 18, "bold"))
+        self.title_label.place(relx=0.2, rely=0.5, anchor=tkinter.CENTER)
         
         #name label
         self.name_label = ctk.CTkLabel(master=self.frame, text = "Name:", font=("Century Gothic", 17, "bold"))
@@ -57,6 +57,10 @@ class Search(ctk.CTkFrame):
         self.covid_test_label.place(x= 50, y=580)
 
     def entries(self):
+        #search entry
+        self.search_entry = ctk.CTkEntry(master=self.frame2, width=150, height=30, font=("Century Gothic", 17, "bold"))
+        self.search_entry.place(relx=0.44, rely=0.5, anchor=tkinter.CENTER)
+
         #name entry
         self.name_entry = ctk.CTkEntry(master=self.frame, width=200, height=25)
         self.name_entry.place(x=115, y=83)
@@ -137,7 +141,7 @@ class Search(ctk.CTkFrame):
         self.yes_pending_contact_radiobutton.place(x=350, y=610)
 
     def search_button(self):
-        self.search_button=ctk.CTkButton(self.frame2,width=70, height=40, text="Search", font=('Century Gothic',19,"bold"), command= None)
+        self.search_button=ctk.CTkButton(self.frame2,width=70, height=40, text="Search", font=('Century Gothic',19,"bold"), command= self.search_data)
         self.search_button.place(relx=0.58, rely=0.5, anchor=tkinter.CENTER)
 
     def back_exit_button (self):
