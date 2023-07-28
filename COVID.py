@@ -69,4 +69,6 @@ class COVID(ctk.CTkFrame):
         self.number_entry = ctk.CTkEntry(master=self.frame, width=200, height=25)
         self.number_entry.place(x=190, y=183)
 
-
+        #email entry
+        self.email_entry = ctk.CTkEntry(master=self.frame, width=200, height=25)
+        self.email_entry.place(x=180, y=233)
