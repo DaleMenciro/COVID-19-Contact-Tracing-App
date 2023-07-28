@@ -19,5 +19,10 @@ class COVID(ctk.CTkFrame):
         self.name_label = ctk.CTkLabel(master=self.frame, text = "Name:", font=("Century Gothic", 17, "bold"))
         self.name_label.place(x= 50, y=80)
 
+        #gender label
+        self.gender_label = ctk.CTkLabel(master=self.frame, text = "Gender:", font=("Century Gothic", 17, "bold")) 
+        self.gender_label.place(x= 50, y=130)
+
+
     def entries(self):
 
