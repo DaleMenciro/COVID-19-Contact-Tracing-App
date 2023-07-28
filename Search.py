@@ -203,3 +203,12 @@ class Search(ctk.CTkFrame):
         else:
             # If data is not found, display an error message box
             messagebox.showerror("Error!", "Registration Number not found, please try again.")
+            # Clear the entry widgets and reset some variables to default values
+            self.name_entry.delete(0, tkinter.END)
+            self.number_entry.delete(0, tkinter.END)
+            self.gender.set(value=0)
+            self.email_entry.delete(0, tkinter.END)
+            self.vaccination_status.set(value=0)
+            self.exposure.set(value=0)
+            self.contact.set(value=0)
+            self.covid_test.set(value=0)
