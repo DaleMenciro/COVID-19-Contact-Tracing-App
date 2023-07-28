@@ -196,3 +196,14 @@ class COVID(ctk.CTkFrame):
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(user_data)
+
+ 
+        input_fields = [self.name_entry, self.number_entry, self.email_entry]
+        # Clear the input fields using a loop
+        for field in input_fields:
+            field.delete(0, END)
+            
+        radio_buttons = [self.gender,self.exposure,self.vaccination_status,self.contact,self.covid_test]
+        for radio in radio_buttons:
+            radio.set(0)
+
