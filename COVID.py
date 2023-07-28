@@ -140,7 +140,7 @@ class COVID(ctk.CTkFrame):
     def create_button(self):
         self.save_button=ctk.CTkButton(self.frame2,width=400, height=50, text="Save", font=('Century Gothic',19,"bold"), command= self.on_save_button_click)
         self.save_button.place(relx=0.25, rely=0.5, anchor=tkinter.CENTER)
-        self.search_button=ctk.CTkButton(self.frame2,width=400, height=50, text="Search", font=('Century Gothic',19,"bold"),fg_color=("#CC3636"), command= None)
+        self.search_button=ctk.CTkButton(self.frame2,width=400, height=50, text="Search", font=('Century Gothic',19,"bold"),fg_color=("#CC3636"), command= self.search_frame)
         self.search_button.place(relx=0.75, rely=0.5, anchor=tkinter.CENTER)
 
     def registration_number(self):
