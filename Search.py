@@ -188,3 +188,15 @@ class Search(ctk.CTkFrame):
         if data_found:
             # If data is found, display a message box with the information
             messagebox.showinfo("Hello!", "Registration Number found")
+            # Populate the relevant entry widgets with the retrieved data
+            self.name_entry.delete(0, tkinter.END)
+            self.name_entry.insert(tkinter.END, data_found["Full_name"])
+            self.gender.set(data_found["Gender"])
+            self.number_entry.delete(0, tkinter.END)
+            self.number_entry.insert(tkinter.END, data_found["Phone Number"])
+            self.email_entry.delete(0, tkinter.END)
+            self.email_entry.insert(tkinter.END, data_found["Email"])
+            self.vaccination_status.set(data_found["Vaccination Status"])
+            self.exposure.set(data_found["Exposure Status"])
+            self.contact.set(data_found["Contact Exposure Status"])
+            self.covid_test.set(data_found["COVID Test"])
