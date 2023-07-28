@@ -165,14 +165,14 @@ class COVID(ctk.CTkFrame):
             return
         
          # Create a dictionary to store the data
-          data= {
-               'Full_name': name,
-               'Gender': gender,
-               'Phone Number': phone_number,
-               'Email': email,
-               'Vaccination Status': vaccine,
-               'Exposure Status': exposure,
-               'Contact Exposure Status': contact,
-               'COVID Test': covid_test,
-               'Registration Number': short_uuid
-          }
+        data= {
+            'Full_name': name,
+            'Gender': gender,
+            'Phone Number': phone_number,
+            'Email': email,
+            'Vaccination Status': vaccine,
+            'Exposure Status': exposure,
+            'Contact Exposure Status': contact,
+            'COVID Test': covid_test,
+            'Registration Number': short_uuid
+        }
