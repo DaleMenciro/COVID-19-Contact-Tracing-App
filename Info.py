@@ -8,6 +8,8 @@ class Info(ctk.CTkFrame):
         super().__init__(parent)
         self.frame=ctk.CTkFrame(parent, width=700, height=550)
         self.frame.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
+        self.display_text()
+        self.create_button()
 
     def display_text(self):
         #About text

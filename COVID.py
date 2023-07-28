@@ -60,9 +60,13 @@ class COVID(ctk.CTkFrame):
         #gender radiobutton
         self.gender = tkinter.IntVar()
         
-        self.male_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.gender, value= 1, text="Male", font=("Century Gothic", 16), command= )
+        self.male_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.gender, value= 1, text="Male", font=("Century Gothic", 16), command=None )
         self.male_radiobutton.place(x=125, y=133)
-        self.female_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.gender,value= 2, text="Female", font=("Century Gothic", 16), command= )
+        self.female_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.gender,value= 2, text="Female", font=("Century Gothic", 16), command=None )
         self.female_radiobutton.place(x=215, y=133)
+
+        #number entry
+        self.number_entry = ctk.CTkEntry(master=self.frame, width=200, height=25)
+        self.number_entry.place(x=190, y=183)
 
 
