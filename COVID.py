@@ -176,3 +176,11 @@ class COVID(ctk.CTkFrame):
             'COVID Test': covid_test,
             'Registration Number': short_uuid
         }
+          # Open the CSV file for reading
+        try:
+            with open("contact_tracing_data.csv", "r", newline='') as file:
+                reader = csv.DictReader(file)
+                user_data = list(reader)
+        except FileNotFoundError:
+            user_data = []
+
