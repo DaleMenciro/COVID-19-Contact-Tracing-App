@@ -131,3 +131,12 @@ class Search(ctk.CTkFrame):
         
         self.yes_pending_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Pending", font=("Century Gothic", 12), value= 4)
         self.yes_pending_contact_radiobutton.place(x=350, y=610)
+
+    def search_button(self):
+
+    def back_exit_button (self):
+
+    def exit(self):
+
+    def back(self):
+
