@@ -142,8 +142,13 @@ class Search(ctk.CTkFrame):
 
         self.exit_button=ctk.CTkButton(self.frame2,width=70, height=40, text="Exit", font=('Century Gothic',19,"bold"), command= self.exit)
         self.exit_button.place(relx=0.9, rely=0.5, anchor=tkinter.CENTER)
-        
+
     def exit(self):
+        response = messagebox.askyesno("Message", "Are you sure you want to exit?")
+        if response:
+            messagebox.showinfo("Message", "Thank you for using the program!")
+            from Start import Application
+            Application.quit(self)
 
     def back(self):
 
