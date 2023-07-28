@@ -173,3 +173,6 @@ class Search(ctk.CTkFrame):
         except FileNotFoundError:
             # If the file is not found, initialize an empty list for user_data
             user_data = []
+        
+        # Initialize a variable to store the found data (if any)
+        data_found = None
