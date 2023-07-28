@@ -133,3 +133,9 @@ class COVID(ctk.CTkFrame):
         self.yes_pending_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.covid_test, text="Yes-Pending", font=("Century Gothic", 12), value= 4)
         self.yes_pending_contact_radiobutton.place(x=350, y=610)
         
+
+    def create_button(self):
+        self.save_button=ctk.CTkButton(self.frame2,width=400, height=50, text="Save", font=('Century Gothic',19,"bold"), command= None)
+        self.save_button.place(relx=0.25, rely=0.5, anchor=tkinter.CENTER)
+        self.search_button=ctk.CTkButton(self.frame2,width=400, height=50, text="Search", font=('Century Gothic',19,"bold"),fg_color=("#CC3636"), command= None)
+        self.search_button.place(relx=0.75, rely=0.5, anchor=tkinter.CENTER)
