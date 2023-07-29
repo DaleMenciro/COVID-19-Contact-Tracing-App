@@ -120,13 +120,13 @@ class Search(ctk.CTkFrame):
 
         self.contact = tkinter.IntVar()
 
-        self.yes_contact_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.contact, text="Yes", font=("Century Gothic", 12), value= 1,, state= "disabled")
+        self.yes_contact_radiobutton = ctk.CTkRadioButton(master= self.frame, variable= self.contact, text="Yes", font=("Century Gothic", 12), value= 1, state= "disabled")
         self.yes_contact_radiobutton.place(x=50, y=545)
 
-        self.no_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="No", font=("Century Gothic", 12), value= 2,, state= "disabled")
+        self.no_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="No", font=("Century Gothic", 12), value= 2, state= "disabled")
         self.no_contact_radiobutton.place(x=140, y=545)
 
-        self.uncertain_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="Uncertain", font=("Century Gothic", 12), value= 3,, state= "disabled")
+        self.uncertain_contact_radiobutton = ctk.CTkRadioButton(master=self.frame, variable= self.contact, text="Uncertain", font=("Century Gothic", 12), value= 3, state= "disabled")
         self.uncertain_contact_radiobutton.place(x=235, y=545)
 
         #covid test radiobutton
